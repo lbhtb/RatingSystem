@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User</title>
+
+  </head>
+  <body>
+    <div>
+
+      <li>Type : XL824 </li>
+      <% if   @thermostat_total_ratings.nil?%>
+        <li>Rating : Yet to be Rated</li>
+      <%else%>
+        <li>Rating : <%=   @thermostat_total_ratings%>/5</li>
+      <%end%>
+     
+       <% if  @thermostat_total_reviews ==0%>
+        <li>Total Reviews : Yet to be Reviewed</li>
+      <%else%>
+        <li>Total Reviews : <%=  @thermostat_total_reviews%></li>
+      <%end%>
+    
+      <br></br>
+      <li>Type : Indoor </li>
+       <% if  @indoor_total_ratings.nil? %>
+        <li>Rating : Yet to be Rated</li>
+      <%else%>
+        <li>Rating : <%=  @indoor_total_ratings%>/5</li>
+      <%end%>
+      
+      <% if  @indoor_total_reviews ==0%>
+        <li>Total Reviews : Yet to be Reviewed</li>
+      <%else%>
+        <li>Total Reviews : <%=  @indoor_total_reviews%></li>
+      <%end%>
+
+      <br></br>
+      
+      <li>Type : Outdoor </li>
+       <% if  @outdoor_total_ratings.nil?%>
+        <li>Rating : Yet to be Rated</li>
+      <%else%>
+        <li>Rating : <%=  @outdoor_total_ratings%>/5</li>
+      <%end%>
+      
+      <% if  @outdoor_total_reviews ==0%>
+        <li>Total Reviews : Yet to be Reviewed</li>
+      <%else%>
+        <li>Total Reviews : <%=  @outdoor_total_reviews%></li>
+      <%end%>
+      
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Adding new Customer</title>
+
+  </head>
+  <body>
+
+      <%= form_for @add_user, :url => {:action => "add"} do |f|  %>
+      Enter UserName : <%= f.text_field :name%><br></br>
+      <%= f.submit "Add", class: "btn btn-primary"  %>
+      <%end%>
+
+  </body>
+</html>

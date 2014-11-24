@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User</title>
+
+  </head>
+  <body>
+    <div>
+      <table border="1" style="width:100%">
+        <tr>
+          Rating System
+        </tr>
+        <tr>
+          <td>
+            Type : XL824
+            <% if   @xl824_ratings.nil?%>
+              Rating : Yet to be Rated
+            <%else%>
+              Rating : <%=   @xl824_ratings%>/5
+            <%end%>
+
+            <% if  @xl824_reviews ==0%>
+              Total Reviews : Yet to be Reviewed
+            <%else%>
+              Total Reviews : <%=  @xl824_reviews%>
+            <%end%>
+
+          </td>
+
+          <td>
+
+
+            Type : XL950
+            <% if  @xl950_ratings.nil? %>
+              Rating : Yet to be Rated
+            <%else%>
+              Rating : <%=  @xl950_ratings%>/5
+            <%end%>
+
+            <% if  @xl950_reviews ==0%>
+              Total Reviews : Yet to be Reviewed
+            <%else%>
+              Total Reviews : <%=  @xl950_reviews%>
+            <%end%>
+          </td>
+
+          <td>
+            Type : XL20i Air Conditioner
+            <% if  @xl20i_air_conditioner_ratings.nil?%>
+              Rating : Yet to be Rated
+            <%else%>
+              Rating : <%=  @xl20i_air_conditioner_ratings%>/5
+            <%end%>
+
+            <% if  @xl20i_air_conditioner_reviews ==0%>
+              Total Reviews : Yet to be Reviewed
+            <%else%>
+              Total Reviews : <%=  @xl20i_air_conditioner_reviews%>
+            <%end%>
+
+          </td>
+          <td>
+            Type : XC95m Gas Furnace
+            <% if  @xc95m_gas_furnace_ratings.nil?%>
+              Rating : Yet to be Rated
+            <%else%>
+              Rating : <%=  @xc95m_gas_furnace_ratings%>/5
+            <%end%>
+
+            <% if  @xc95m_gas_furnace_reviews ==0%>
+              Total Reviews : Yet to be Reviewed
+            <%else%>
+              Total Reviews : <%=  @xc95m_gas_furnace_reviews%>
+            <%end%>
+
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Type : Humidifier
+            <% if  @humidifier_ratings.nil?%>
+              Rating : Yet to be Rated
+            <%else%>
+              Rating : <%=  @humidifier_ratings%>/5
+            <%end%>
+
+            <% if  @humidifier_reviews ==0%>
+              Total Reviews : Yet to be Reviewed
+            <%else%>
+              Total Reviews : <%=  @humidifier_reviews%>
+            <%end%>
+
+          </td>
+          <td>
+            Type : Air Cleaner
+            <% if  @aircleaner_ratings.nil?%>
+              Rating : Yet to be Rated
+            <%else%>
+              Rating : <%=  @aircleaner_ratings%>/5
+            <%end%>
+
+            <% if  @aircleaner_reviews ==0%>
+              Total Reviews : Yet to be Reviewed
+            <%else%>
+              Total Reviews : <%=  @aircleaner_reviews%>
+            <%end%>
+
+          </td>
+          <td>
+            Type : Hyperion Air Handler
+            <% if  @hyperion_air_handler_ratings.nil?%>
+              Rating : Yet to be Rated
+            <%else%>
+              Rating : <%=  @hyperion_air_handler_ratings%>/5
+            <%end%>
+
+            <% if  @hyperion_air_handler_reviews ==0%>
+              Total Reviews : Yet to be Reviewed
+            <%else%>
+              Total Reviews : <%=  @hyperion_air_handler_reviews%>
+            <%end%>
+          </td>
+        </tr>
+      </table> 
+      <%= link_to "Home" , "/users/index" %>
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LearnRails</title>
+
+  </head>
+  <body>
+    <%= form_for @delete_user,:url =>{:action => "delete"} do |f| %>
+      <%= f.text_field :name %>
+      <%= f.submit "Delete",class: 'btn btn-primary' %>
+    <%end%>
+  </body>
+</html>

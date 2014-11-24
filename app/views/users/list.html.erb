@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User</title>
+
+  </head>
+  <body>
+    <div>
+
+      <% @user.each do |item|  %>
+        <li>User : <%= item.name %> </li>
+        <%  item.equipments.each do |record| %>
+        <li> <%=  record.equip_id %> : <%=  record.rate %>/5</li>
+        <%end%>
+      <%end%>
+      <%= link_to "Home" , "/users/index" %>
+    </div>
+  </body>
+
+</html>
